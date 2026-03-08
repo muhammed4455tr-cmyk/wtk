@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Karanlık Koridor</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main id="game">
+    <h1>Karanlık Koridor</h1>
+    <p class="subtitle">Kapıyı bulmadan önce gölgeler seni bulmasın.</p>
+
+    <section id="status">
+      <p><strong>Can:</strong> <span id="health">3</span></p>
+      <p><strong>Konum:</strong> <span id="room-name">-</span></p>
+      <p><strong>Envanter:</strong> <span id="inventory">Boş</span></p>
+    </section>
+
+    <section id="scene">
+      <p id="description"></p>
+      <div id="choices"></div>
+    </section>
+
+    <section id="log-section">
+      <h2>Günlük</h2>
+      <ul id="log"></ul>
+    </section>
+
+    <button id="restart" hidden>Yeniden Başlat</button>
+  </main>
+
+  <script src="game.js"></script>
+</body>
+</html>
